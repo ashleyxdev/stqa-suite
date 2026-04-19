@@ -4,7 +4,7 @@ Write-Host "==============================="
 Write-Host ""
 
 # Base URL of your GitHub repo (raw content)
-$repoBase = "https://raw.githubusercontent.com/ashleyxdev/dsa-suite/master"
+$repoBase = "https://raw.githubusercontent.com/ashleyxdev/stqa-suite/master"
 
 # List available Python scripts
 $pyPrograms = @(
