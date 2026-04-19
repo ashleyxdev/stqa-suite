@@ -7,16 +7,28 @@ Write-Host ""
 # Base URL of your GitHub repo (raw content)
 $repoBase = "https://raw.githubusercontent.com/ashleyxdev/stqa-suite/master"
 
-# List of lab practical files (add new entries here as the course progresses)
+# All files — section: "Practical" or "Setup"
 $labFiles = @(
-    @{ id = 1; name = "7-update-student-records.py"; type = "Python" },
-    @{ id = 2; name = "8-select-student-marks.py";   type = "Python" }
+    @{ id = 1; name = "7-update-student-records.py"; type = "Python";   section = "Practical" },
+    @{ id = 2; name = "8-select-student-marks.py";   type = "Python";   section = "Practical" },
+    @{ id = 3; name = "selenium-setup-guide.md";     type = "Markdown"; section = "Setup"     },
+    @{ id = 4; name = "pom.xml";                     type = "XML";      section = "Setup"     }
 )
 
-# Display options
-Write-Host "Available Lab Files:`n"
-foreach ($f in $labFiles) {
-    Write-Host "$($f.id). [$($f.type)] $($f.name)"
+# Display: Lab Practicals
+Write-Host "Lab Practicals:"
+Write-Host "---------------"
+foreach ($f in $labFiles | Where-Object { $_.section -eq "Practical" }) {
+    Write-Host "  $($f.id). [$($f.type)] $($f.name)"
+}
+
+Write-Host ""
+
+# Display: Helper / Setup Files
+Write-Host "Helper / Setup Files:"
+Write-Host "---------------------"
+foreach ($f in $labFiles | Where-Object { $_.section -eq "Setup" }) {
+    Write-Host "  $($f.id). [$($f.type)] $($f.name)"
 }
 
 Write-Host ""
@@ -29,7 +41,7 @@ if (-not $selected) {
     exit
 }
 
-# Download selected lab file
+# Download selected file
 $fileUrl = "$repoBase/$($selected.name)"
 Write-Host "`nDownloading $($selected.name)..."
 try {
