@@ -13,6 +13,9 @@ $labFiles = @(
     @{ id = 5;  name = "5-LoginTest.java";            type = "Java";     section = "Practical" },
     @{ id = 7;  name = "7-update-student-records.py"; type = "Python";   section = "Practical" },
     @{ id = 8;  name = "8-select-student-marks.py";   type = "Python";   section = "Practical" },
+    @{ id = 9;  name = "9-CountObjects.java";         type = "Java";     section = "Practical" },
+    @{ id = 10;  name = "10-CountListItems.java";     type = "Java";     section = "Practical" },
+    @{ id = 11;  name = "11-CountCheckboxes.java";    type = "Java";     section = "Practical" },
     @{ id = 99; name = "selenium-setup-guide.md";     type = "Markdown"; section = "Setup"     },
     @{ id = 100; name = "pom.xml";                    type = "XML";      section = "Setup"     }
 )
