@@ -5,7 +5,7 @@ Write-Host "================================================"
 Write-Host ""
 
 # Base URL of your GitHub repo (raw content)
-$repoBase = "https://raw.githubusercontent.com/ashleyxdev/dsa-suite/master"
+$repoBase = "https://raw.githubusercontent.com/ashleyxdev/stqa-suite/master"
 
 # List of lab practical files (add new entries here as the course progresses)
 $labFiles = @(
