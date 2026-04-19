@@ -10,10 +10,10 @@ $repoBase = "https://raw.githubusercontent.com/ashleyxdev/stqa-suite/master"
 # ID for practicals = their filename prefix number
 # ID for setup files = 99, 100, ... (to avoid conflict with future practicals)
 $labFiles = @(
-    @{ id = 1;  name = "1-gmail-login-test-suite";          type = "Excel";    section = "Practical" },
-    @{ id = 2;  name = "2-two-website-test-suite";          type = "Excel";    section = "Practical" },
-    @{ id = 3;  name = "3-social-media-app-test-suite";     type = "Excel";    section = "Practical" },
-    @{ id = 4;  name = "4-defect-report";                   type = "Excel";    section = "Practical" },
+    @{ id = 1;  name = "1-gmail-login-test-suite.xlsx";          type = "Excel";    section = "Practical" },
+    @{ id = 2;  name = "2-two-website-test-suite.xlsx";          type = "Excel";    section = "Practical" },
+    @{ id = 3;  name = "3-social-media-app-test-suite.xlsx";     type = "Excel";    section = "Practical" },
+    @{ id = 4;  name = "4-defect-report.xlsx";                   type = "Excel";    section = "Practical" },
     @{ id = 5;  name = "5-LoginTest.java";                  type = "Java";     section = "Practical" },
     @{ id = 7;  name = "7-update-student-records.py";       type = "Python";   section = "Practical" },
     @{ id = 8;  name = "8-select-student-marks.py";         type = "Python";   section = "Practical" },
